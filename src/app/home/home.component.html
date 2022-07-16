@@ -1,1 +1,9 @@
 <p>home works!</p>
+
+<hr>
+<table>
+    <tr *ngFor="let note of notes">
+        <th >{{note.noteText}}</th>
+        <td>{{note.userId}}</td>
+    </tr>
+</table>

@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()" #noteForm="ngForm">
+    <div class="form-floating">
+        <label for="floatingInput">Note</label>
+        <input type="text" name="noteText" class="form-control" id="floatingInput" placeholder="Add a some note" [(ngModel)]="note.noteText">
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Save</button>
+    </form>
+
