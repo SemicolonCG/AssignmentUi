@@ -9,14 +9,16 @@ import { AuthenticationService } from '../service/authentication.service';
 })
 export class HomeComponent implements OnInit {
 
-  notes :Note[]=[];
+  notes :any[]= [];
 
   constructor(private authenticationService:AuthenticationService) {
 
-    this.getNotes();
+    
    }
 
   ngOnInit(): void {
+    this.getNotes();
+  
   }
 
   getNotes(){

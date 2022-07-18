@@ -25,11 +25,11 @@ export class NoteComponent implements OnInit {
   }
   onSubmit(){
     console.log(this.note);
-    this.authenticationService.addNote(this.note)
-    .subscribe(
-      response=>{
-        console.log(response);
-      }
-    )
+    // this.authenticationService.addNote(this.note)
+    // .subscribe(
+    //   response=>{
+    //     console.log(response);
+    //   }
+    // )
   }
 }

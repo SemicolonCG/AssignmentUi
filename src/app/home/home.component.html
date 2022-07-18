@@ -1,9 +1,17 @@
 <p>home works!</p>
 
 <hr>
-<table>
-    <tr *ngFor="let note of notes">
-        <th >{{note.noteText}}</th>
-        <td>{{note.userId}}</td>
-    </tr>
-</table>
+<div *ngIf="notes">
+    <div *ngFor="let note of notes ">
+        <span> Username : {{note.userId}}</span>
+        <h3 >Note : {{note.noteText}}</h3>
+        <div *ngFor="let comment of note">
+            <h4> Comment : {{comment.commentText}}</h4>
+            <input type="text"/>
+            <!-- <div *ngFor="let reply note.replies">
+                <h5>Reply : {{reply.replyText}}</h5>
+                <input type="text"/>
+            </div> -->
+        </div> 
+    </div>
+</div>
